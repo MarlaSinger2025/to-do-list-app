@@ -29,4 +29,7 @@ function deleteListItem(){
     li.addClass("delete");
 }
 
+// Change order of items
+$('#list').sortable();
+
 }
