@@ -11,8 +11,12 @@ if (inputValue === '') {
     $('#list').append(li);
 }
 
-    li.on("click" , function(){
-    li.addClass("strike");
+    li.on("dblclick" , function(){
+    li.toggleClass("strike");
 });
+
+let crossOutButton = $('<crossOutButton></crossOutButton>');
+crossOutButton.append(document.createTextNode('X'));
+li.append(crossOutButton);
 
 }
