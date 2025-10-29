@@ -33,3 +33,10 @@ function deleteListItem(){
 $('#list').sortable();
 
 }
+
+// How can I add an Item with pressing the Enter key? Tried around with code but its definitely not right
+$('#input').on("keypress", function(e){
+    if (e.which === 13) {
+        newItem();  
+    }
+});
